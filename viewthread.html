@@ -12,7 +12,7 @@
 		<li class="post">
 			<header>
 				<div class="cite">
-					<div class="avator"></div>
+					<div class="avator lzimg" data-img="images/avator.png"></div>
 					<div class="username">楼主</div>
 					<div class="post-time">发布于2013-11-16</div>
 				</div>
@@ -25,10 +25,10 @@
 最高档的唐代有文字的青铜鎏金佛像</div>
 			<div class="post-images">
 				<ul>
-					<li>198</li>
-					<li>198</li>
-					<li>198</li>
-					<li>198</li>
+					<li class="lzimg" data-img="images/1.jpg"></li>
+					<li class="lzimg" data-img="images/2.jpg"></li>
+					<li class="lzimg" data-img="images/1.jpg"></li>
+					<li class="lzimg" data-img="images/2.jpg"></li>
 				</ul>
 			</div>
 			<footer>
@@ -43,7 +43,7 @@
 		<li class="post">
 			<header>
 				<div class="cite">
-					<div class="avator"></div>
+					<div class="avator lzimg" data-img="images/avator.png"></div>
 					<div class="username">楼主</div>
 					<div class="post-time">发布于2013-11-16</div>
 				</div>
@@ -62,10 +62,10 @@
 最高档的唐代有文字的青铜鎏金佛像</div>
 			<div class="post-images">
 				<ul>
-					<li>198</li>
-					<li>198</li>
-					<li>198</li>
-					<li>198</li>
+					<li class="lzimg" data-img="images/1.jpg"></li>
+					<li class="lzimg" data-img="images/2.jpg"></li>
+					<li class="lzimg" data-img="images/1.jpg"></li>
+					<li class="lzimg" data-img="images/2.jpg"></li>
 				</ul>
 			</div>
 			<footer>
@@ -83,5 +83,13 @@
 		<div class="btn_next">下一页</div>
 	</div>
 </section>
+
+<script>
+var imgBoxes = document.getElementsByClassName('lzimg');
+
+for(var i = 0, len = imgBoxes.length; i < len; i++){
+	imgBoxes[i].style.backgroundImage = 'url(' + imgBoxes[i].getAttribute('data-img') + ')';
+}
+</script>
 </body>
 </html>

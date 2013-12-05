@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+<link rel="stylesheet" href="post.css" />
+</head>
+<body>
+<section class="newpost">
+
+	<div class="title">
+		<div>标题：</div>
+		<div><input type="text" /></div>
+	</div>
+	
+	<div class="forum">
+		<div>板块：</div>
+		<div class="bluetxt">玺印 - 明代、清代流派和...</div>
+	</div>
+	
+	<div class="avgtwo">
+		<div class="account">
+			<label>帐号：</label>
+			<div class="bluetxt">用户名很长</div>
+		</div>
+		<div class="post-type">
+			<label>可交易：</label>
+			<div class="switcher">
+				<div class="switcherbg">
+					<div class="bar"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="cat-price subtitle">
+		分类属性及价格
+		<span class="conner"></span>
+	</div>
+	<div class="category">
+		<label>分类:</label>
+		<span class="bluetxt">玺印-明代、清代流派和...</span>
+	</div>
+	<ul class="property-list">
+		<li>
+			<label>属性名1：</label><span>必填，点此进行选择</span>
+		</li>
+		<li>
+			<label>属性名2：</label><span class="selected">布币</span>
+		</li>
+		<li>
+			<label>属性名3：</label><span class="selected">铸母</span>
+		</li>
+	</ul>
+	
+	<div class="age">
+		<div>断代：</div>
+		<div><input type="text" placeholder="选填项" /></div>
+	</div>
+	<div class="spec">
+		<div>规格：</div>
+		<div><input type="text" placeholder="必填项" /></div>
+	</div>
+	<div class="price">
+		<div>价格：</div>
+		<div><input type="text" placeholder="必填项" /></div>
+		<div>
+			<label>
+				<input type="checkbox" />
+				不公开
+			</label>
+		</div>
+	</div>
+	<div class="service subtitle">
+		服务承诺
+		<span class="conner"></span>
+	</div>
+	
+	<ul class="service-list">
+		<li>
+			<label><input type="checkbox" /> 全部选中</label>
+			<label><input type="checkbox" /> 包到代</label>
+		</li>
+		<li>
+			<label><input type="checkbox" /> 规格描述正确</label>
+			<label><input type="checkbox" /> 缺陷已描述完整</label>
+		</li>
+		<li>
+			<label><input type="checkbox" /> 买房无理由退货(保存完好)</label>
+		</li>
+	</ul>
+	
+	<div class="toolbar">
+		<div class="btn smile"></div>
+		<div class="btn img"></div>
+	</div>
+	<div class="pcontent">
+		<textarea></textarea>
+	</div>
+</section>
+
+<script>
+var switcher = document.getElementsByClassName('switcherbg')[0];
+switcher.addEventListener('click', function(e){
+	if(/deactive/.test(this.className)){
+		this.className = this.className.replace('deactive', '');
+	}else{
+		this.className += ' deactive';
+	}
+});
+</script>
+</body>
+</html>
