@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+<link rel="stylesheet" href="login.css" />
+</head>
+<body>
+<section class="login">
+	<div class="inset">
+		<div class="logo"></div>
+		<div class="frm">
+			<div class="fi">
+				<input type="text" placeholder="请输入用户名" />
+			</div>
+			<div class="fi">
+				<input type="password" placeholder="请输入密码" />
+			</div>
+			<div class="fb">登录</div>
+		</div>
+	</div>
+	<div class="reg-passwd">注册帐号 | 找回密码</div>
+</section>
+<script>
+var getBrowserSize = function() {
+	var de = document.documentElement;
+	return {
+		width: (window.innerWidth || (de && de.clientWidth) || document.body.clientWidth),
+		height: (window.innerHeight || (de && de.clientHeight) || document.body.clientHeight)
+	}
+}
+
+document.getElementsByClassName('login')[0].style.height = getBrowserSize().height + 'px';
+</script>
+</body>
+</html>
