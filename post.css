@@ -239,7 +239,8 @@ textarea {
   line-height: 40px;
 }
 .newpost .price > div:nth-child(2) {
-  -webkit-box-flex: 2.0;
+  -webkit-box-flex: 1.0;
+  width: 40%;
   line-height: 40px;
 }
 .newpost .price > div:nth-child(2) input[type="text"] {
@@ -258,6 +259,8 @@ textarea {
 .newpost .price > div:nth-child(3) label {
   line-height: 40px;
   margin-left: 10px;
+  height: 40px;
+  overflow: hidden;
 }
 .newpost .price > div:nth-child(3) input[type="checkbox"] {
   border: 1px solid #adadad;
