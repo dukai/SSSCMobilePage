@@ -261,6 +261,7 @@ textarea {
   margin-left: 10px;
   height: 40px;
   overflow: hidden;
+  display: block;
 }
 .newpost .price > div:nth-child(3) input[type="checkbox"] {
   border: 1px solid #adadad;
