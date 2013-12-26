@@ -30,6 +30,7 @@
 				.cite{
 					font-size:12px;
 					color:#888;
+					margin-top: 5px;
 				}
 				&:after{
 					content: ' ';
@@ -73,6 +74,31 @@
 						background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAPCAMAAAGzY784AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA7VpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wUmlnaHRzPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvcmlnaHRzLyIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcFJpZ2h0czpNYXJrZWQ9IkZhbHNlIiB4bXBNTTpPcmlnaW5hbERvY3VtZW50SUQ9InhtcC5kaWQ6N0ZFNDZEMzU5MTNCRTMxMThBMUQ4QUY0MEYzMEVEQTAiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6Qzk5NzEyMUQ2RDMyMTFFMzkwRUE4QTI5NzgxNTYyOUIiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6Qzk5NzEyMUM2RDMyMTFFMzkwRUE4QTI5NzgxNTYyOUIiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoV2luZG93cykiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDpCNzc2NjNGQ0Q5NThFMzExOTU5QjgyRDU4QTY4NjNEQSIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo3RkU0NkQzNTkxM0JFMzExOEExRDhBRjQwRjMwRURBMCIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PgIaoJ4AAAA8UExURcvO09bb5Nne6NHV29PX3tLW3dXa4tfc5dba48zP1M7R1tvg69jd58vO0srN0tba4s/S2NHU29zh7MrN0WV5BHsAAACGSURBVHjaYhAGAgYgFgIIIBDBCiSEhAACCMQSFuYTEgIzhIAAIIAgIhCFcBVCCBoggGDyYMABFRcWhmlH8AWFUPkQrhBAAKHoF2ZgQuYzoMozoqpnRNXPhd98ATQ+N5QPEGCo9iMDTn7c0sx4dPOyCwnhlmYREsIjzSOET5pJCJ80G4qsEABRih/jXFRxvAAAAABJRU5ErkJggg==);
 						right:-7px;
 					}
+				}
+			}
+
+			&.split{
+				text-align: center;
+				font-size:13px;
+				color:#666;
+				height: 30px;
+				line-height: 30px;
+				span{
+					background: #dce1ec;
+					z-index: 1;
+					.rel;
+					display: inline-block;
+					padding: 0 4px;
+				}
+				&:after{
+					content: " ";
+					display: block;
+					height: 15px;
+					border-bottom: 1px solid #ccc;
+					.abs;
+					top:0;
+					width:100%;
+					z-index: 0;
 				}
 			}
 		}
