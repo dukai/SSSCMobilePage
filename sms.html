@@ -20,8 +20,8 @@
 
 
 <section class="sms-dialog">
-    <ul>
-        <li>
+    <ul id="message-list">
+        <li class="self">
             <div class="avatar"></div>
             <div class="bubble">
                 <div class="content">雕塑，是立体的视觉艺术，是更纯粹的艺术，素为各方所重，以佛教造像艺术为杰出代表</div>
@@ -29,7 +29,7 @@
             </div>
         </li>
 
-        <li>
+        <li class="others">
             <div class="avatar"></div>
             <div class="bubble">
                 <div class="content">雕塑，是立体的视觉艺术，是更纯粹的艺术，素为各方所重，以佛教造像艺术为杰出代表</div>
@@ -43,5 +43,97 @@
     </ul>
 
 </section>
+
+<script>
+    var msgList = {"success":1,"message":"","pageCount":8,"sessionId":"a72489a37b5686bb6dc224c8549129ed","datas":[{"id":13520293,"session_id":"a72489a37b5686bb6dc224c8549129ed","sender_uid":79015,"sender_username":"wk1006","source":"web","created_time":"2013-04-19 04:00:52","deleted":"","images":"","message":"ok,bye","type":0},{"id":13520294,"session_id":"a72489a37b5686bb6dc224c8549129ed","sender_uid":129331,"sender_username":"xiaobaov2","source":"web","created_time":"2013-04-19 04:00:54","deleted":"","images":"","message":"bye","type":0},{"id":13520295,"session_id":"a72489a37b5686bb6dc224c8549129ed","sender_uid":129331,"sender_username":"xiaobaov2","source":"web","created_time":"2013-04-19 04:01:01","deleted":"","images":"","message":"1","type":0},{"id":13520296,"session_id":"a72489a37b5686bb6dc224c8549129ed","sender_uid":79015,"sender_username":"wk1006","source":"web","created_time":"2013-04-19 04:01:02","deleted":"","images":"","message":"2","type":0},{"id":13520297,"session_id":"a72489a37b5686bb6dc224c8549129ed","sender_uid":79015,"sender_username":"wk1006","source":"web","created_time":"2013-04-19 04:01:07","deleted":"","images":"","message":"3","type":0},{"id":13520298,"session_id":"a72489a37b5686bb6dc224c8549129ed","sender_uid":129331,"sender_username":"xiaobaov2","source":"web","created_time":"2013-04-19 04:01:09","deleted":"","images":"","message":"4","type":0},{"id":13520299,"session_id":"a72489a37b5686bb6dc224c8549129ed","sender_uid":79015,"sender_username":"wk1006","source":"web","created_time":"2013-04-19 04:01:30","deleted":"","images":"","message":"3","type":0},{"id":13530980,"session_id":"a72489a37b5686bb6dc224c8549129ed","sender_uid":129331,"sender_username":"xiaobaov2","source":"web","created_time":"2013-04-19 20:55:29","deleted":"","images":"","message":"\u963f\u65af\u987f\u98de","type":0},{"id":13530983,"session_id":"a72489a37b5686bb6dc224c8549129ed","sender_uid":79015,"sender_username":"wk1006","source":"web","created_time":"2013-04-19 20:55:39","deleted":"","images":"","message":"asdfsdf","type":0},{"id":13530984,"session_id":"a72489a37b5686bb6dc224c8549129ed","sender_uid":79015,"sender_username":"wk1006","source":"web","created_time":"2013-04-19 20:55:41","deleted":"","images":"","message":"eerwer","type":0},{"id":13530985,"session_id":"a72489a37b5686bb6dc224c8549129ed","sender_uid":79015,"sender_username":"wk1006","source":"web","created_time":"2013-04-19 20:55:43","deleted":"","images":"","message":"23123","type":0},{"id":13530987,"session_id":"a72489a37b5686bb6dc224c8549129ed","sender_uid":129331,"sender_username":"xiaobaov2","source":"web","created_time":"2013-04-19 20:55:47","deleted":"","images":"","message":"\u963f\u65af\u987f\u98de\u6492\u65e6\u53d1","type":0},{"id":13530988,"session_id":"a72489a37b5686bb6dc224c8549129ed","sender_uid":129331,"sender_username":"xiaobaov2","source":"web","created_time":"2013-04-19 20:55:50","deleted":"","images":"","message":"\u4e07\u6076\u98de\u6492\u65e6\u53d1","type":0},{"id":13530993,"session_id":"a72489a37b5686bb6dc224c8549129ed","sender_uid":129331,"sender_username":"xiaobaov2","source":"web","created_time":"2013-04-19 20:56:01","deleted":"","images":"","message":"\u963f\u65af\u987f\u98de","type":0},{"id":13530994,"session_id":"a72489a37b5686bb6dc224c8549129ed","sender_uid":79015,"sender_username":"wk1006","source":"web","created_time":"2013-04-19 20:56:03","deleted":"","images":"","message":"asdf","type":0},{"id":13530995,"session_id":"a72489a37b5686bb6dc224c8549129ed","sender_uid":79015,"sender_username":"wk1006","source":"web","created_time":"2013-04-19 20:56:05","deleted":"","images":"","message":"asdf","type":0},{"id":13645013,"session_id":"a72489a37b5686bb6dc224c8549129ed","sender_uid":129331,"sender_username":"xiaobaov2","source":"web","created_time":"2013-04-27 21:36:02","deleted":"","images":"","message":"aaaa","type":0},{"id":13645049,"session_id":"a72489a37b5686bb6dc224c8549129ed","sender_uid":129331,"sender_username":"xiaobaov2","source":"web","created_time":"2013-04-27 21:38:03","deleted":"","images":"","message":"a","type":0},{"id":13645050,"session_id":"a72489a37b5686bb6dc224c8549129ed","sender_uid":129331,"sender_username":"xiaobaov2","source":"web","created_time":"2013-04-27 21:38:04","deleted":"","images":"","message":"b","type":0},{"id":13647063,"session_id":"a72489a37b5686bb6dc224c8549129ed","sender_uid":79015,"sender_username":"wk1006","source":"web","created_time":"2013-04-27 22:58:42","deleted":"","images":"","message":"a","type":0},{"id":13647064,"session_id":"a72489a37b5686bb6dc224c8549129ed","sender_uid":79015,"sender_username":"wk1006","source":"web","created_time":"2013-04-27 22:58:43","deleted":"","images":"","message":"b","type":0},{"id":13647065,"session_id":"a72489a37b5686bb6dc224c8549129ed","sender_uid":79015,"sender_username":"wk1006","source":"web","created_time":"2013-04-27 22:58:46","deleted":"","images":"","message":"c","type":0},{"id":13647067,"session_id":"a72489a37b5686bb6dc224c8549129ed","sender_uid":79015,"sender_username":"wk1006","source":"web","created_time":"2013-04-27 22:58:47","deleted":"","images":"","message":"d","type":0},{"id":13647072,"session_id":"a72489a37b5686bb6dc224c8549129ed","sender_uid":79015,"sender_username":"wk1006","source":"web","created_time":"2013-04-27 22:58:53","deleted":"","images":"","message":"e","type":0},{"id":14238072,"session_id":"a72489a37b5686bb6dc224c8549129ed","sender_uid":79015,"sender_username":"wk1006","source":"web","created_time":"2013-06-02 16:35:03","deleted":"","images":"","message":"a","type":0},{"id":14238074,"session_id":"a72489a37b5686bb6dc224c8549129ed","sender_uid":79015,"sender_username":"wk1006","source":"web","created_time":"2013-06-02 16:35:06","deleted":"","images":"","message":"a","type":0},{"id":14238076,"session_id":"a72489a37b5686bb6dc224c8549129ed","sender_uid":79015,"sender_username":"wk1006","source":"web","created_time":"2013-06-02 16:35:09","deleted":"","images":"","message":"b","type":0},{"id":14238080,"session_id":"a72489a37b5686bb6dc224c8549129ed","sender_uid":79015,"sender_username":"wk1006","source":"web","created_time":"2013-06-02 16:35:34","deleted":"","images":"","message":"b","type":0},{"id":14238090,"session_id":"a72489a37b5686bb6dc224c8549129ed","sender_uid":79015,"sender_username":"wk1006","source":"web","created_time":"2013-06-02 16:36:03","deleted":"","images":"","message":"b","type":0},{"id":14238101,"session_id":"a72489a37b5686bb6dc224c8549129ed","sender_uid":79015,"sender_username":"wk1006","source":"web","created_time":"2013-06-02 16:37:46","deleted":"","images":"","message":"b","type":0},{"id":14238102,"session_id":"a72489a37b5686bb6dc224c8549129ed","sender_uid":79015,"sender_username":"wk1006","source":"web","created_time":"2013-06-02 16:37:53","deleted":"","images":"","message":"b","type":0},{"id":14238106,"session_id":"a72489a37b5686bb6dc224c8549129ed","sender_uid":79015,"sender_username":"wk1006","source":"web","created_time":"2013-06-02 16:38:35","deleted":"","images":"","message":"b","type":0},{"id":14238109,"session_id":"a72489a37b5686bb6dc224c8549129ed","sender_uid":79015,"sender_username":"wk1006","source":"web","created_time":"2013-06-02 16:38:56","deleted":"","images":"","message":"b","type":0},{"id":14238110,"session_id":"a72489a37b5686bb6dc224c8549129ed","sender_uid":79015,"sender_username":"wk1006","source":"web","created_time":"2013-06-02 16:38:59","deleted":"","images":"","message":"c","type":0},{"id":14238118,"session_id":"a72489a37b5686bb6dc224c8549129ed","sender_uid":79015,"sender_username":"wk1006","source":"web","created_time":"2013-06-02 16:39:26","deleted":"","images":"","message":"a","type":0},{"id":14238119,"session_id":"a72489a37b5686bb6dc224c8549129ed","sender_uid":79015,"sender_username":"wk1006","source":"web","created_time":"2013-06-02 16:39:28","deleted":"","images":"","message":"b","type":0},{"id":14238130,"session_id":"a72489a37b5686bb6dc224c8549129ed","sender_uid":79015,"sender_username":"wk1006","source":"web","created_time":"2013-06-02 16:40:09","deleted":"","images":"","message":"sdfsadf","type":0},{"id":14238181,"session_id":"a72489a37b5686bb6dc224c8549129ed","sender_uid":79015,"sender_username":"wk1006","source":"web","created_time":"2013-06-02 16:46:25","deleted":"","images":"","message":"abc","type":0},{"id":14238182,"session_id":"a72489a37b5686bb6dc224c8549129ed","sender_uid":79015,"sender_username":"wk1006","source":"web","created_time":"2013-06-02 16:46:28","deleted":"","images":"","message":"def","type":0},{"id":14238233,"session_id":"a72489a37b5686bb6dc224c8549129ed","sender_uid":79015,"sender_username":"wk1006","source":"web","created_time":"2013-06-02 16:51:32","deleted":"","images":"","message":"abcedfg","type":0},{"id":14238277,"session_id":"a72489a37b5686bb6dc224c8549129ed","sender_uid":79015,"sender_username":"wk1006","source":"web","created_time":"2013-06-02 16:55:09","deleted":"","images":"","message":"xyz","type":0},{"id":14238505,"session_id":"a72489a37b5686bb6dc224c8549129ed","sender_uid":79015,"sender_username":"wk1006","source":"web","created_time":"2013-06-02 17:16:26","deleted":"","images":"","message":"adsfsdf","type":0},{"id":14239234,"session_id":"a72489a37b5686bb6dc224c8549129ed","sender_uid":79015,"sender_username":"wk1006","source":"web","created_time":"2013-06-02 18:02:52","deleted":"","images":"","message":"asasas\u963f\u65af\u987f\u98de\u56db\u5927","type":0},{"id":14239271,"session_id":"a72489a37b5686bb6dc224c8549129ed","sender_uid":79015,"sender_username":"wk1006","source":"web","created_time":"2013-06-02 18:07:02","deleted":"","images":"","message":"asasas\u963f\u65af\u987f\u98de\u56db\u5927","type":0},{"id":14239274,"session_id":"a72489a37b5686bb6dc224c8549129ed","sender_uid":79015,"sender_username":"wk1006","source":"web","created_time":"2013-06-02 18:07:17","deleted":"","images":"","message":"asasas\u963f\u65af\u987f\u98de\u56db\u5927","type":0},{"id":14239276,"session_id":"a72489a37b5686bb6dc224c8549129ed","sender_uid":79015,"sender_username":"wk1006","source":"web","created_time":"2013-06-02 18:07:21","deleted":"","images":"","message":"\u963f\u65af\u987f\u53d1\u9001\u5730\u65b9","type":0},{"id":14239283,"session_id":"a72489a37b5686bb6dc224c8549129ed","sender_uid":79015,"sender_username":"wk1006","source":"web","created_time":"2013-06-02 18:08:20","deleted":"","images":"","message":"[\/qiang]","type":0},{"id":16543822,"session_id":"a72489a37b5686bb6dc224c8549129ed","sender_uid":79015,"sender_username":"wk1006","source":"web","created_time":"2013-11-10 20:25:08","deleted":"","images":"","message":"HELLO","type":0},{"id":16543827,"session_id":"a72489a37b5686bb6dc224c8549129ed","sender_uid":79015,"sender_username":"wk1006","source":"web","created_time":"2013-11-10 20:25:17","deleted":"","images":"","message":"HOW","type":0},{"id":16544832,"session_id":"a72489a37b5686bb6dc224c8549129ed","sender_uid":79015,"sender_username":"wk1006","source":"web","created_time":"2013-11-10 21:03:45","deleted":"","images":"","message":"asdfasdf","type":0}]};
+
+
+    var mix = function(base, child){
+        var o = new Object();
+        for(var key in base){
+            o[key] = base[key];
+        }
+        for(var key in child){
+            o[key] = child[key];
+        }
+        return o;
+    };
+    var MsgBuilder = function(options){
+        this._initMsgBuilder(options);
+    };
+
+    MsgBuilder.prototype = {
+        _initMsgBuilder: function(options){
+            this.options = {
+                selfName: 'wk1006'
+            };
+
+            this.options = mix(this.options, options);
+            this._initUI();
+        },
+
+        _initUI: function(){
+            var li = document.createElement("li");
+            var avatar = document.createElement('div');
+            avatar.className = "avatar";
+            var bubble = document.createElement('div');
+            bubble.className = "bubble";
+            var content = document.createElement('div');
+            content.className = "content";
+            var cite = document.createElement('div');
+            cite.className = "cite";
+            if(this.options.message.sender_username == this.options.selfName){
+                li.className = "self";
+            }else{
+                li.className = "others";
+            }
+
+            li.appendChild(avatar);
+            li.appendChild(bubble);
+            bubble.appendChild(content);
+            bubble.appendChild(cite);
+            content.innerHTML = this.options.message.message;
+            cite.innerHTML = this.options.message.created_time;
+
+            this.messageNode = li;
+        },
+
+        getHtmlNode: function(){
+            return this.messageNode;
+        }
+
+    };
+
+
+    for(var i = 0, len = msgList.datas.length; i < len; i++){
+        var msg = new MsgBuilder({
+            message: msgList.datas[i]
+        });
+
+        document.getElementById('message-list').appendChild(msg.getHtmlNode());
+    }
+    /**
+     * 轮询获取信息
+     */
+    setInterval(function(){
+        checkNewMessage(function(messageList){
+            for(var i = 0, len = messageList.datas.length; i < len; i++){
+                var msg = new MsgBuilder({
+                    message: messageList.datas[i]
+                });
+
+                document.getElementById('message-list').appendChild(msg.getHtmlNode());
+            }
+        });
+
+    }, 3000);
+
+    function checkNewMessage(callback){
+        //TODO: ajax check new messages
+
+        //callback(messageList);
+    }
+
+</script>
 </body>
 </html>
